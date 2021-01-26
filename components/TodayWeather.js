@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { StyleSheet, View, Text, Image } from 'react-native'
 
 export default function TodayWeather({ data }) {
@@ -6,10 +6,6 @@ export default function TodayWeather({ data }) {
     const temp = data.current.temp;
     const icon = data.current.weather[0].icon;
     const time = data.current.weather[0].description;
-
-    useEffect(() => {
-        console.log(data);
-    }, [])
 
     return (
         <View style={styles.container}>

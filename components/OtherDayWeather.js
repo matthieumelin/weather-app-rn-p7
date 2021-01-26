@@ -44,7 +44,9 @@ const styles = StyleSheet.create({
     other_day: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        alignItems: 'center'
+        alignItems: 'center',
+        borderBottomColor: 'lightgray',
+        borderBottomWidth: 1
     },
     other_day_icon: {
         width: 50,
